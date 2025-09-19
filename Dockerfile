@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Download and set up Windows 11 ISO
-RUN wget -O windows11.iso "https://example.com/path/to/windows11.iso" \
+RUN wget -O windows11.iso "https://archive.org/download/tiny-11-NTDEV/tiny11%20b2%28no%20sysreq%29.iso/path/to/windows11.iso" \
     && mkdir -p /windows11
 
 # Set up the VNC server
