@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: windows11-gui
+    env: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: VNC_PASSWORD
+        value: password
+    ports:
+      - port: 6901
+        protocol: http
